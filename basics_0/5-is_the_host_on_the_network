@@ -7,10 +7,5 @@ fi
 
 ip_address="$1"
 
-ping -c 5 "$ip_address" >/dev/null 2>&1
+ping -c 5 "$ip_address"
 
-if [ $? -eq 0 ]; then
-  echo "Host $ip_address is reachable."
-else
-  echo "Host $ip_address is not reachable."
-fi
