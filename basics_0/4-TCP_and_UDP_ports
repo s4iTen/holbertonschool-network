@@ -1,3 +1,3 @@
-#!/bin/bash
+#!/usr/bin/env
 # Write a script to displays listening ports:
 sudo netstat -tupn
