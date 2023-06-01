@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+if [ -z "$1" ]; then
+  echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
+  exit 1
+fi
+
+ip_address="$1"
+
+ping -c 5 "$ip_address" >/dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+  echo "Host $ip_address is reachable."
+else
+  echo "Host $ip_address is not reachable."
+fi
