@@ -1,1 +1,1 @@
-# holbertonschool-network
+# This is the holbertonschool-network's project
